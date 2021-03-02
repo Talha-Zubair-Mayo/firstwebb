@@ -1,13 +1,849 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* *{margin: 0; padding: 0; box-sizing: border-box;} */
+
+/* .heading
+{
+  color: rgb(167, 97, 97);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 50px 0;
+} */
+/* 
+.imggg
+{
+    display: flex;
+    justify-content: center;
+}
+.imggg img
+{
+
+    width:300px;
+    height:300px;
+
+} */
+/* 
+ body
+{
+  background-color: aqua;
+  box-sizing: border-box;
+  color:darkmagenta;
+  margin: 0%;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+div
+{
+  width:100%;
+  height:100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -30px;
+
 }
+h1
+{
+  padding: 20px 20px;
+  background-color: burlywood;
+  border-radius: 20px;
+}  */
+
+/* 
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/raleway/v19/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCIPrQ.ttf) format('truetype');
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  background-color: #f8f8f8;
+}
+body {
+  padding: 2rem 0.5rem;
+  font-family: 'Raleway', Sans-serif;
+  color: #32325d;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  margin: 0;
+}
+@media (min-width: 40rem) {
+  body {
+    padding: 2rem;
+  }
+}
+.container {
+  display: flex;
+  -webkit-display: box;
+  -moz-display: box;
+  -ms-display: flexbox;
+  -webkit-display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+.cards {
+  display: flex;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  width: 20%;
+}
+@media (min-width: 40rem) {
+  .cards {
+    width: 50%;
+  }
+}
+@media (min-width: 56rem) {
+  .cards {
+    width: 33.3%;
+  }
+}
+.cards .card-item {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;
+}
+.cards .card-item:hover {
+  
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+.cards .card-item:hover .card-image {
+  opacity: 1;
+}
+.cards .card-info {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: 1rem;
+  line-height: 1.5em;
+}
+.cards .card-title {
+  font-size: 25px;
+  line-height: 1.1em;
+  color: #32325d;
+  margin-bottom: 0.2em;
+}
+.cards .card-image .card_img {
+  height: 200px;
+  width: 400px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 6px 6px 0px 0px;
+  opacity: 0.91;
+}
+
+ .kinkk
+{
+  cursor: pointer;
+} */
+
+/* *{
+  box-sizing: border-box;
+  padding: 0;
+  margin:0;
+  
+}
+div{
+  width:100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #d2dbdd;
+}
+button {
+  padding: 15px 20px;
+  background-color:red;
+  color:white;
+  border: 1px solid royalblue;
+  border-radius:5px;
+  cursor: pointer;
+}
+
+h1{
+
+  font-size: 60px;
+}
+
+/* .btnn
+{
+  padding: 15px 20px;
+  background-color:royalblue;
+  color:white;
+  border: 2px solid #ecf0f1;
+  outline: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 1.5rem;
+
+
+} */
+
+/* .input 
+{
+  padding:15px 20px;
+  width: 50%;
+  border: none;
+  margin: 20px;
+  text-align: center;
+  font-size:2rem;
+}
+form
+{
+  width:60%;
+}
+
+.btnn
+{
+  line-height: 50px;
+  padding: 0 20px;
+  background-color:purple;
+  border: 2px solid  #d2dbdd;
+  outline: none;
+  border-radius:5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 1.5rem;
+
+} */ 
+
+/* #44 Building a Todo List App Project in ReactJS */
+/* 
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin:0;
+  
+}
+.Main_Div
+{
+  width:100%;
+  height: 100vh;
+  background-color:aquamarine;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.center_DIv
+{
+  width:25%;
+  height: 80vh;
+  background-color:#f4f4f4;
+  border-radius: 15px;
+}
+.Heading
+{
+  color: white;
+  background: transparent;
+  background-color: #8566aa;
+  margin-bottom: 10px;
+
+
+}
+.input
+{
+  text-align: center;
+  height: 40px;
+  top: 10px;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 500;
+  width: 70%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  border-radius: 5px;
+}
+.btnn
+{
+  min-height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border-color:transparent;
+  background-color: #8566aa;
+  color:#fff;
+  outline: none;
+  margin-left: 10px;
+}
+
+.btnn:hover
+{
+  background-color:#20bf6b;
+
+}
+.oll
+{
+  margin-top: 30px
+
+}
+
+.oll li
+{
+  padding-left: 0px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 500;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  color: #8566aa;
+  text-transform: capitalize;
+}
+
+.ToDostyle
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+
+.ToDostyle .fa-times
+{
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#8566aa;
+  border-radius: 50%;
+  margin: 0 15px 0 35px;
+  color: aliceblue;
+
+}
+
+.fa-times:hover
+{
+  background-color: red;
+} */
+/* #45 React Challenge #8: Incrementing and Decrementing the State Variable on Button clicked in React JS */
+
+/* *{
+  box-sizing: border-box;
+  padding: 0;
+  margin:0;
+  
+}
+
+.Mainnnn
+{
+  width:100%;
+  height: 100vh;
+  background-color:aquamarine;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+.Center
+{
+  width: 25%;
+  height: 60vh;
+  background-color:#f4f4f4;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.h111
+{
+  color: white;
+  background: transparent;
+  font-size: 50px;
+  background-color: #30336b;
+  padding: 60px 0 2px 0;
+  margin-bottom: 10px;
+  width: 100%;
+  padding-bottom:50px;
+
+
+}
+.btn_div button
+{
+  min-height: 40px;
+  border-radius: 5%;
+  background-color:#30336b ;
+  color: #fff;
+  font-size: 20px;
+  margin-top:30px;
+  padding:0 15px ;
+  margin: 10px;
+}
+
+.btn_div button:hover
+{
+  background-color:#22a6b3;
+  cursor: pointer;
+}
+
+.btn_div
+{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+
+} */
+
+/* #45 React Project using Material UI Free Code: Create ToDo List App in React */
+
+/* *
+{
+box-sizing:border-box;
+padding:0;
+margin:0;
+
+}
+.main_div
+{
+  width:100%;
+  height:100vh;
+  background:#7bed9f;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.center_div
+{
+  width:25%;
+  height:70vh;
+  background-color:#f4f4f4
+;
+box-shadow
+:
+5px
+5px
+25px
+-5px
+rgba
+(
+0
+,
+0
+,
+0
+,
+0.5
+);
+border-radius
+:
+15px
+;
+}
+
+h1
+{
+color
+:
+rgba
+(
+0
+,
+0
+,
+0
+,
+0.87
+);
+font-size
+:
+50px
+;
+margin-bottom
+:
+30px
+;
+min-width
+:
+64px
+;
+box-sizing
+:
+border-box
+;
+font-family
+:
+"Comfortaa"
+,
+cursive
+;
+  
+font-weight
+:
+500
+;
+border-radius
+:
+4px
+;
+letter-spacing
+:
+0.02857em
+;
+text-transform
+:
+uppercase
+;
+text-shadow
+:
+5px
+5px
+5px
+rgba
+(
+0
+,
+0
+,
+0
+,
+0.3
+);
+}
+
+input
+{
+  border
+:
+none
+;
+background
+:
+transparent
+;
+font-size
+:
+20px
+;
+font-weight
+:
+500
+;
+width
+:
+60%
+;
+border-bottom
+:
+2px
+solid
+#8566aa
+;
+outline
+:
+none
+;
+margin-right
+:
+20px
+;
+}
+
+.newBtn
+{
+width
+:
+50px
+;
+height
+:
+55px
+;
+background-color
+:
+#16a085
+!important
+;
+color
+:
+white
+!important
+;
+box-shadow
+:
+5px
+5px
+15px
+-5px
+rgba
+(
+0
+,
+0
+,
+0
+,
+0.3
+);
+  
+border-radius
+:
+50%
+!important
+;
+}
+
+.newBtn:hover
+{
+color
+:
+#16a085
+!important
+;
+background
+:
+white
+!important
+;
+}
+
+ol
+{
+margin-top
+:
+30px
+;
+
+}
+
+ol
+li
+{
+padding-left
+:
+0px
+;
+text-align
+:
+left
+;
+font-size
+:
+20px
+;
+min-height
+:
+40px
+;
+display
+:
+fex
+;
+align-items
+:
+center
+;
+color
+:
+#8566aa
+;
+text-transform
+:
+capitalize
+;
+  
+list-style
+:
+none
+;
+}
+.todo_style
+{
+display
+:
+flex
+;
+flex-direction
+:
+row
+;
+justify-content
+:
+left
+;
+align-items
+:
+center
+;
+}
+.todo_style
+.deleteIcon
+{
+width
+:
+25px
+;
+height
+:
+25px
+;
+display
+:
+flex
+;
+justify-content
+:
+center
+;
+align-items
+:
+center
+;
+background-color
+:
+#8566aa
+;
+border-radius
+:
+50%
+;
+margin
+:
+0
+15px
+0
+35px
+;
+padding
+:
+5px
+;
+color
+:
+aliceblue
+;
+box-shadow
+:
+5px
+5px
+15px
+-5px
+rgba
+(
+0
+,
+0
+,
+0
+,
+0.3
+);
+}
+.todo_style
+.deleteIcon:hover
+{
+  color
+:
+crimson
+;
+box-shadow
+:
+5px
+5px
+15px
+-5px
+rgba
+(
+255
+,
+0
+,
+0
+,
+0.5
+);
+}
+.todo_style
+.fa-times:hover
+.list_style
+{
+color
+:
+crimson
+;
+}
+@media
+(
+max-width
+:
+768px
+) {
+.center_div
+{
+width
+:
+55%
+;
+}
+.todo_style
+.fa-times
+{
+margin
+:
+0
+15px
+0
+15px
+;
+display
+:
+flex
+;
+align-items
+:
+center
+;
+
+}
+button
+{
+margin-left
+:
+5px
+;
+min-height
+:
+40px
+;
+width
+:
+40px
+;
+color
+:
+#fff
+;
+font-size
+:
+30px
+;
+}
+} */
