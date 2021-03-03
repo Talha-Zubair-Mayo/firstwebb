@@ -1,5 +1,18 @@
-import React, { useState } from "react";
-// import TodoList from "./TodoList";
+import React, { /*createContext, useEffect, useState */ } from "react";
+// Importing Axios
+//import axios from "axios";
+
+// importing Routing And Switch From  "react-router-dom"
+
+import { Route , Switch  } from "react-router-dom";
+import Home from "./Home";
+import About from "./About";
+import Contact from "./Contact";
+import Error from "./Error";
+
+// import ComponentC from "./ComponentC";
+// import ComponentB from "./ComponentB";
+// // import TodoList from "./TodoList";
 // import Button from "@material-ui/core/Button";
 // import RemoveSharpIcon from "@material-ui/icons/RemoveSharp";
 // import AddIcon from "@material-ui/icons/Add";
@@ -9,8 +22,6 @@ import React, { useState } from "react";
 // Importing bootstrap
 //import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 // C:\Users\tkash\Desktop\ReactJs\firstweb\node_modules\bootstrap\dist\css\bootstrap.min.css
-
-
 // import Add , { Sub, mul , Dev} from "./Calc";
 // Importing our JSX Component
 
@@ -840,7 +851,7 @@ import React, { useState } from "react";
 //     {
 
 //       SetItem(event.target.value);
-      
+
 //     };
 
 //     const Addlistitem = ()=>
@@ -873,7 +884,7 @@ import React, { useState } from "react";
 //               return <ListCompo  key={Index} text={value} />
 //             })
 //           }
-            
+
 //           </ol>
 //         </div>
 //       </div>
@@ -884,8 +895,6 @@ import React, { useState } from "react";
 // export default App;
 
 //#47 How to Install and Use Bootstrap 4 in React JS
-
-
 
 // const App = () =>
 // {
@@ -944,11 +953,230 @@ import React, { useState } from "react";
 
 // export default App;
 
+// #51 Context API in React JS
 
-const App = ()=>{
+//   const Name = createContext();
+//   const Lastname = createContext();
+
+// const App = ()=>{
+
+//   return<>
+//    <Name.Provider value="Talha">
+//    <Lastname.Provider value="Zubair">
+
+//    <ComponentC />
+
+//    </Lastname.Provider>
+//    </Name.Provider>
+
+//   </>
+// }
+
+// export default App;
+
+// export {Name , Lastname};
+
+// #52 useContext Hook in React | How useContext Hook Works in ReactJS
+// Use context in componentB
+// const Name = createContext();
+// const Lastname = createContext();
+
+// const App = ()=>{
+
+//   return<>
+//    <Name.Provider value="Talha">
+//    <Lastname.Provider value="Zubair">
+
+//    <ComponentB />
+
+//    </Lastname.Provider>
+//    </Name.Provider>
+
+//   </>
+// }
+
+// export default App;
+
+// export {Name , Lastname};
+
+// #54 useEffect Hook in React JS
+
+// const App = () => {
+//   const [num, Setnum] = useState(0);
+//   const [nums, Setnums] = useState(0);
+
+//   // If Value Of num Is Changed The the Useffect will run called
+
+//   useEffect(()=>
+//   {
+//     alert("i AM UseEffect");
+//   }, [num])
+
+//   return (
+//     <>
+//       <button
+//         onClick={() => {
+//           Setnum(num + 1);
+//         }}
+//       >
+//         Click Me {num}
+//       </button>
+
+//     <br/>
+//     <br/>
+      
+//     <button
+//         onClick={() => {
+//           Setnums(nums + 1);
+//         }}
+//       >
+//         Click Me {nums}
+//       </button>
+
+//     </>
+//   );
+// };
+
+// export default App;
+
+
+//#54 React Hook Challenge #7: Changing the Title value of Website on Button Click 
+
+// const App =()=>
+// {
+
+//   const [num , Setnum] =  useState(0);
+  
+//   useEffect(()=>
+//   {
+//       //alert(`I'm Alert By use effect`);
+//       document.title =`Hello You Clicked Me ${num} times`;
+//   },[num]);
+//   return<>
+
+//     <button onClick={
+//       ()=>
+//       {
+//         Setnum(num + 1);
+//       }
+//     } >Click me {num}</button>
+
+//   </>
+
+// }
+
+// export default App;
+
+// #55 React API Call to Get Pokemon JSON Data using Axios and useEffect in ReactJS
+
+// const App = ()=>
+// {
+
+//   const[num , Setnum ] = useState();
+//   const[Name , SetName] = useState();
+//   const[moves , Setmoves] = useState();
+
+//   useEffect(()=>
+//   {
+//     async function getdata() {
+      
+//       const res = await axios.get(`https://pokeapi.co/api/v2/pokemon/${num}`);
+//       SetName(res.data.name);
+//       Setmoves(res.data.moves.length);
+//       console.log(res)
+
+//     }
+
+   
+//     getdata();
+//   });
+
+//   return <>
+
+//     <h3>You selected Value  <span style={{color:"red"}}>{num}</span></h3>
+//     <h1>My Name IS  <span style={{color:"red"}}>{Name}</span>   </h1>
+//     <h4>My Moves Are <span style={{color:"red"}}>{moves}</span></h4>
+    
+//    <select 
+//       value={num}
+//       onChange={(event)=>
+//       {
+//           Setnum(event.target.value);
+//       }}
+//     >
+//       <option value="0">0</option>
+//       <option value="1">1</option>
+//       <option value="25">25</option>
+//       <option value="4">4</option>
+//       <option value="5">5</option>
+//       <option value="6">6</option>
+//       <option value="8">8</option>
+//       <option value="3">3</option>
+//       <option value="7">7</option>
+//       <option value="10">10</option>
+//       <option value="11">11</option>
+
+//     </select>
+
+//   </>
+// }
+
+// export default App;
+
+// #54 React Router Tutorial in Hindi | React Router Dom
+
+// const App = ()=>
+// {
+//     const Name = ()=>
+//     {
+      
+//       return <h1>Hellooo My Name Is TaLhA ZuBaiR MaYo</h1>
+//     };
+
+//   return<>
+
+//     <Switch>
+//       <Route exact path="/" component={Home}/>
+//       <Route exact path="/About" component={About}/>
+//       <Route path="/Contact" component={Contact}/>
+//       <Route exact path="/About/Name" component={Name} />
+//       <Route component={Error} />
+
+//     </Switch>
+
+//     {/* <Home />
+//     <Contact />
+//     <About /> */}
+
+//   </>
+// }
+
+// export default App;
+
+// #57 Create React NAVBAR / MENU using React Router in ReactJS
+
+const App = ()=>
+{
+    const Name = ()=>
+    {
+      
+      return <h1>Hellooo My Name Is TaLhA ZuBaiR MaYo</h1>
+    };
 
   return<>
-   <h1>Hiiiiiiiiii</h1>
+
+    <Switch>
+      <Route exact path="/" component={Home}/>
+      <Route exact path="/About" component={About}/>
+      <Route path="/Contact" component={Contact}/>
+      <Route exact path="/About/Name" component={Name} />
+      <Route component={Error} />
+
+    </Switch>
+
+    {/* <Home />
+    <Contact />
+    <About /> */}
 
   </>
 }

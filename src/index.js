@@ -5,6 +5,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+// importing BrowseRouter
+
+import {BrowserRouter} from "react-router-dom";
+
 //import Add, { Sub, mul, Dev } from "./Calc";
 // Importing our JSX Component
 
@@ -428,4 +432,11 @@ import "./index.css";
 
 // #26 If Else Statement in React JS | Conditional Rendering in React JS
 
-ReactDOM.render(<App /> , document.getElementById("root"));
+ReactDOM.render(
+    
+<BrowserRouter>
+<App />
+</BrowserRouter>
+
+
+, document.getElementById("root"));
