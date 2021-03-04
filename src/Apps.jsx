@@ -9,7 +9,10 @@ import Home from "./Home";
 import About from "./About";
 import Contact from "./Contact";
 import Error from "./Error";
-
+import User from "./User";
+// Importing Navbar 
+import Navbar from "./Navbar";
+import Search from "./Search";
 // import ComponentC from "./ComponentC";
 // import ComponentB from "./ComponentB";
 // // import TodoList from "./TodoList";
@@ -20,7 +23,7 @@ import Error from "./Error";
 // import ListCompo from "./ListComponent";
 
 // Importing bootstrap
-//import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 // C:\Users\tkash\Desktop\ReactJs\firstweb\node_modules\bootstrap\dist\css\bootstrap.min.css
 // import Add , { Sub, mul , Dev} from "./Calc";
 // Importing our JSX Component
@@ -1155,6 +1158,70 @@ import Error from "./Error";
 
 // #57 Create React NAVBAR / MENU using React Router in ReactJS
 
+// const App = ()=>
+// {
+//     const Name = ()=>
+//     {
+      
+//       return <h1>Hellooo My Name Is TaLhA ZuBaiR MaYo</h1>
+//     };
+
+//   return<>
+
+//       <Navbar />
+//     <Switch>
+//       <Route exact path="/" component={Home}/>
+//       <Route exact path="/About" component={About}/>
+//       <Route path="/Contact" component={Contact}/>
+//       <Route exact path="/About/Name" component={Name} />
+//       <Route component={Error} />
+
+//     </Switch>
+
+//     {/* <Home />
+//     <Contact />
+//     <About /> */}
+
+//   </>
+// }
+
+// export default App;
+
+// #56 React Route Render Method | Difference between Render and Component Prop on React Router
+
+// const App = ()=>
+// {
+//     const Name = ()=>
+//     {
+      
+//       return <h1>Hellooo My Name Is TaLhA ZuBaiR MaYo</h1>
+//     };
+
+//   return<>
+
+//       <Navbar />
+//     <Switch>
+//       <Route exact path="/" component={Home}/>
+//       {/* Using Component With Passing Prop  */}
+//       <Route exact path="/About" component={()=><About name="Passing Prop"/>}/>
+//       {/* USing render Method is better to pass props*/}
+//       <Route path="/Contact" render={()=><Contact name="Contact Us"/>}/>
+//       <Route exact path="/About/Name" component={Name} />
+//       <Route component={Error} />
+
+//     </Switch>
+
+//     {/* <Home />
+//     <Contact />
+//     <About /> */}
+
+//   </>
+// }
+
+// export default App;
+
+// #57 useParams Hooks in React Router 
+
 const App = ()=>
 {
     const Name = ()=>
@@ -1165,11 +1232,20 @@ const App = ()=>
 
   return<>
 
+      <Navbar />
     <Switch>
       <Route exact path="/" component={Home}/>
-      <Route exact path="/About" component={About}/>
-      <Route path="/Contact" component={Contact}/>
+      <Route exact path="/Search" component={Search}/>
+      {/* Using Component With Passing Prop  */}
+      <Route exact path="/About" component={()=><About name="Passing Prop"/>}/>
+      {/* USing render Method is better to pass props*/}
+      <Route path="/Contact" render={()=><Contact name="Contact Us"/>}/>
       <Route exact path="/About/Name" component={Name} />
+      {/* Passing parameter and we will fetch it on user component Using params */}
+      {/* We Can Pass Many parameters according To our requirements By This Syntax /Url/:parameter/:secondParameter */}
+      <Route exact path="/User/:name/:lname" component={User} />
+
+      
       <Route component={Error} />
 
     </Switch>
@@ -1182,3 +1258,8 @@ const App = ()=>
 }
 
 export default App;
+
+// #60 useLocation Hook in React Router // Its usage is in User Component
+// #61 useHistory Hook in React Router // Its usage is in User Component
+// #62 Live Search Filter using Hooks & Router in React JS // Its Functionality in Search And Navbar Component
+// #64 Create React 404 Error Page Not Found using React Router // Its working is inError Component
